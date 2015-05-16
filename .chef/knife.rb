@@ -4,10 +4,10 @@ log_location			STDOUT
 cache_type				'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path           ["#{current_dir}/../site-cookbooks","#{current_dir}/../cookbooks"]
-node_path     			"nodes"
-role_path				"roles"
-data_bag_path			"data_bags"
-environment_path		"environments"
+node_path     			"#{current_dir}/../nodes"
+role_path				"#{current_dir}/../roles"
+data_bag_path			"#{current_dir}/../data_bags"
+environment_path		"#{current_dir}/../environments"
 
 cookbook_copyright       "Nilesh Londhe"
 cookbook_email           "nilesh@cloudgeni.us"
