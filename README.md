@@ -17,15 +17,16 @@ Prepare wordpress
 	mv wordpress /var/www
 	rm -f latest.tar.gz  
 	cd /var/www
-	mv wordpress be.a.cloudgeni.us
+        rm -rf /var/www/wordpress.cloudgeni.us
+	mv wordpress wordpress.cloudgeni.us
 
 Setup database
 
-	mysql -u root -p
+	mysql -u root -p123
 	create database wordpress;  
-	create user 'user'@'localhost' identified by 'password'; 
-	grant usage on *.* to user@localhost identified by 'password';  
-	grant all privileges on wordpress.* to user@localhost;
+	create user 'username'@'localhost' identified by 'password'; 
+	grant usage on *.* to username@localhost identified by 'password';  
+	grant all privileges on wordpress.* to username@localhost;
 
 edit wp-config.php config file
 
@@ -33,6 +34,6 @@ edit wp-config.php config file
 
 Set permissions
 
-    chown -R www-data:www-data /var/www/be.a.cloudgeni.us
+    chown -R www-data:www-data /var/www/wordpress.cloudgeni.us
 
     chmod 400 wp-config.php
