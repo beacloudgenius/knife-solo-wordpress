@@ -16,6 +16,6 @@
     "recipe[wordpress_nginx]"
   ],
   "automatic": {
-    "ipaddress": "be.a.cloudgeni.us"
+    "ipaddress": "wordpress.cloudgeni.us"
   }
 }
