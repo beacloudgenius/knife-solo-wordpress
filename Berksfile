@@ -1,0 +1,26 @@
+source "https://supermarket.chef.io"
+
+cookbook 'wordpress_nginx',
+	:git => 'https://github.com/beacloudgenius/wordpress-nginx'
+
+cookbook 'apt', '2.4.0'
+cookbook 'build-essential', '2.0.4'
+cookbook 'bluepill', '2.3.1'
+cookbook 'chef-sugar', '2.0.0'
+cookbook 'chef_handler', '1.1.6'
+cookbook 'hostsfile', '2.4.5'
+cookbook 'hostname', '0.3.0'
+cookbook 'iis', '2.1.2'
+cookbook 'mysql', '5.3.6'
+cookbook 'nginx', '2.7.4'
+cookbook 'ohai', '2.0.1'
+cookbook 'php', '1.4.6'
+cookbook 'php-fpm', '0.6.10'
+cookbook 'runit', '1.5.10'
+cookbook 'rsyslog', '1.12.2'
+cookbook 'varnish', '0.9.16'
+cookbook 'windows', '1.33.1'
+cookbook 'xml', '1.2.6'
+cookbook 'yum', '3.2.2'
+cookbook 'yum-epel', '0.4.0'
+cookbook 'yum-mysql-community', '0.1.10'
