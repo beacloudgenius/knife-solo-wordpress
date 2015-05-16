@@ -31,6 +31,8 @@ edit wp-config.php config file
 
 	cp wp-config-sample.php wp-config.php
 
-chown -R www-data:www-data /var/www/be.a.cloudgeni.us
+Set permissions
 
-chmod 400 wp-config.php
+        chown -R www-data:www-data /var/www/be.a.cloudgeni.us
+
+        chmod 400 wp-config.php
