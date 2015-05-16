@@ -33,6 +33,6 @@ edit wp-config.php config file
 
 Set permissions
 
-        chown -R www-data:www-data /var/www/be.a.cloudgeni.us
+    chown -R www-data:www-data /var/www/be.a.cloudgeni.us
 
-        chmod 400 wp-config.php
+    chmod 400 wp-config.php
