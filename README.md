@@ -11,6 +11,7 @@ How to use this
 
 Prepare wordpress
 
+	sudo su
 	wget http://wordpress.org/latest.tar.gz  
 	tar xfz latest.tar.gz
 	mkdir -p /var/www
@@ -19,6 +20,7 @@ Prepare wordpress
 	cd /var/www
         rm -rf /var/www/wordpress.cloudgeni.us
 	mv wordpress wordpress.cloudgeni.us
+	chown -R www-data:www-data /var/www
 
 Setup database
 
@@ -27,6 +29,7 @@ Setup database
 	create user 'username'@'localhost' identified by 'password'; 
 	grant usage on *.* to username@localhost identified by 'password';  
 	grant all privileges on wordpress.* to username@localhost;
+	flush privileges;
 
 edit wp-config.php config file
 
